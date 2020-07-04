@@ -1,0 +1,8 @@
+.nav {
+  @extend .position-absolute, .navbar, .navbar-expand-lg, .navbar-dark, .py-3;
+  background-color: transparentize($color: black, $amount: 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $zindex-sticky;
+}

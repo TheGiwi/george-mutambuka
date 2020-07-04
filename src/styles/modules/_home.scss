@@ -1,0 +1,31 @@
+%slide-height {
+  height: calc(100vh - #{$footer-height});
+}
+
+.home {
+  @extend %slide-height;
+
+  &__carousel {
+    @extend .carousel, %slide-height, .position-absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    &__inner {
+      @extend .carousel-inner, %slide-height;
+
+      &__slide {
+        @extend .carousel-item, %slide-height;
+
+        &__content {
+          @extend .d-flex, .align-items-center, %slide-height;
+
+          &__image {
+            @extend .img-fluid, .w-100;
+          }
+        }
+      }
+    }
+  }
+}
