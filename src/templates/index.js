@@ -13,16 +13,19 @@ import Carousel from '../pages/Home/Carousel'
  * in /utils/siteConfig.js under `postsPerPage`.
  *
  */
-const Index = ({ location }) => (
-  <>
-    <MetaData location={location} />
-    <Layout isHome={true}>
-      <div className="home">
-        <Carousel />
-      </div>
-    </Layout>
-  </>
-)
+const Index = ({ location }) => {
+  const baseClass = 'home'
+  return (
+    <>
+      <MetaData location={location} />
+      <Layout isHome={true}>
+        <div className={baseClass}>
+          <Carousel />
+        </div>
+      </Layout>
+    </>
+  )
+}
 
 Index.propTypes = {
   location: PropTypes.shape({

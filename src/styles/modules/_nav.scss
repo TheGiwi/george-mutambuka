@@ -1,6 +1,11 @@
 .nav {
-  @extend .position-absolute, .navbar, .navbar-expand-lg, .navbar-dark, .py-3;
-  background-color: transparentize($color: black, $amount: 0.5);
+  @extend .position-absolute,
+    .navbar,
+    .navbar-expand-lg,
+    .navbar-dark,
+    .py-2,
+    .shadow;
+  background-color: transparentize($color: black, $amount: 0.4);
   top: 0;
   left: 0;
   right: 0;
