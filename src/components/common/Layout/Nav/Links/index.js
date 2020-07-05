@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import {
+  extendParentClass,
+  extendBaseClass,
+} from '../../../../../utils/classes'
+import Link from './Link'
 
 export class Links extends Component {
   links = [
@@ -17,16 +21,18 @@ export class Links extends Component {
     },
   ]
 
+  baseClass = extendParentClass.bind(this)('links')
+
+  extend = extendBaseClass.bind(this)
+
   renderLink = (linkData, index) => (
-    <li className="nav-item" key={index}>
-      <Link {...linkData} className="nav-link mx-3 text-light" />
-    </li>
+    <Link {...linkData} key={index} parentClass={this.baseClass} />
   )
 
   renderLinks = () => this.links.map(this.renderLink)
 
   render() {
-    return <ul className="navbar-nav ml-auto">{this.renderLinks()}</ul>
+    return <ul className={this.baseClass}>{this.renderLinks()}</ul>
   }
 }
 

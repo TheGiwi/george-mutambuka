@@ -1,16 +1,20 @@
 import React, { Component } from 'react'
 import Toggle from './Toggle'
-import Links from './Links'
+import Links from './Links/index'
+import Logo from './Logo'
 
 export class Nav extends Component {
+  baseClass = 'nav'
+
   render() {
     const id = 'nav__content'
     return (
-      <nav className="nav">
+      <nav className={this.baseClass}>
         <div className="container">
+          <Logo parentClass={this.baseClass} />
           <Toggle id={id} />
           <div className="collapse navbar-collapse" id={id}>
-            <Links />
+            <Links parentClass={this.baseClass} />
           </div>
         </div>
       </nav>

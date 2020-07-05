@@ -1,0 +1,27 @@
+.portfolio {
+  @extend .d-md-flex,
+    .flex-wrap,
+    .container-fluid,
+    .justify-content-between,
+    .py-5;
+
+  margin-top: $nav-height;
+
+  &__item {
+    @extend .text-light, .mb-5;
+    flex-basis: 48%;
+
+    @include media-breakpoint-up(lg) {
+      flex-basis: 31%;
+    }
+
+    &__thumbnail {
+      @extend .rounded, .mb-3, .p-3, .d-flex, .align-items-center;
+      height: 20rem;
+
+      &__image {
+        @extend .shadow, .rounded, .w-100, .mh-100;
+      }
+    }
+  }
+}

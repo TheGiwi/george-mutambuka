@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import '../../node_modules/bootstrap/js/dist/util'
 
 import Layout from '../components/common/Layout'
 import { MetaData } from '../components/common/meta'

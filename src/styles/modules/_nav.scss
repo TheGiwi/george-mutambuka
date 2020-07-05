@@ -1,8 +1,37 @@
 .nav {
   @extend .position-absolute, .navbar, .navbar-expand-lg, .navbar-dark, .py-3;
-  background-color: transparentize($color: black, $amount: 0.6);
+  background-color: transparentize($color: black, $amount: 0.5);
   top: 0;
   left: 0;
   right: 0;
   z-index: $zindex-sticky;
+
+  &__logo {
+    @extend .navbar-brand;
+
+    &__image {
+      @extend .img-fluid;
+      width: 3rem;
+    }
+  }
+
+  &__links {
+    @extend .navbar-nav, .ml-auto;
+
+    &__item {
+      @extend .nav-item;
+
+      & + & {
+        @extend .ml-5;
+      }
+
+      &__link {
+        @extend .nav-link, .text-light;
+
+        &--active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
