@@ -1,0 +1,4 @@
+@mixin set-padding-x($size) {
+  padding-left: $size;
+  padding-right: $size;
+}

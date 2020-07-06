@@ -12,8 +12,12 @@ export class Links extends Component {
       to: `/`,
     },
     {
-      children: `Portfolio`,
-      to: `/portfolio`,
+      children: `Vector Projects`,
+      to: `/vector`,
+    },
+    {
+      children: '3D Projects',
+      to: '/3d',
     },
     {
       children: `Contact`,

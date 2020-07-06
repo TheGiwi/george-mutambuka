@@ -1,6 +1,7 @@
 ---
 title: 'Ship'
 thumbnail: '../images/Ship_render5.png'
+type: '3d'
 images:
   [
     '../images/Ship_render2.png',

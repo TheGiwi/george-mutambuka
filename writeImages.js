@@ -1,7 +1,7 @@
 const { join } = require('path')
 const fs = require('fs')
 
-const imageDataExample = [
+const threeDimensional = [
   {
     title: 'Product Render',
     images: '3D_product_render_001.jpg',
@@ -84,8 +84,21 @@ const imageDataExample = [
   },
 ]
 
-const getHeader = (title, thumbnail, images) =>
-  `---\ntitle: ${title}\nthumbnail: "${thumbnail}"\nimages: ${JSON.stringify(
+const vector = []
+
+const addTypeToImages = (type, images) =>
+  images.map((imageData) => {
+    return { ...imageData, type }
+  })
+
+const getImages = () => {
+  const threeDimensionalWithType = addTypeToImages('3d', threeDimensional)
+  const vectorWithType = addTypeToImages('vector', vector)
+  return [...threeDimensionalWithType, ...vectorWithType]
+}
+
+const getHeader = (title, thumbnail, type, images) =>
+  `---\ntitle: ${title}\nthumbnail: "${thumbnail}"\ntype: "${type}"\nimages: ${JSON.stringify(
     images
   )}\n---`
 
@@ -95,19 +108,22 @@ const getImagesWithPaths = (images) => images.map(getImagePath)
 
 const getImagesListFromString = (list) => list.split(/\n +/)
 
-const getFileData = (title, images) => {
+const getFileData = ({ title, type = 'vector', images }) => {
   const imagesList = getImagesListFromString(images)
   const imagesWithPaths = getImagesWithPaths(imagesList)
   const [thumbnail, ...otherImages] = imagesWithPaths
-  return getHeader(title, thumbnail, otherImages)
+  return getHeader(title, thumbnail, type, otherImages)
 }
 
-const writeFile = ({ title, images }) => {
-  const path = `./src/content/${title}.md`
-  const fileData = getFileData(title, images)
+const writeFile = (imageData) => {
+  const path = `./src/content/${imageData.title}.md`
+  const fileData = getFileData(imageData)
   fs.writeFileSync(path, fileData)
 }
 
-const writeFiles = () => imageDataExample.forEach(writeFile)
+const writeFiles = () => {
+  const images = getImages()
+  images.forEach(writeFile)
+}
 
 writeFiles()

@@ -1,26 +1,32 @@
 .portfolio {
-  @extend .d-md-flex,
-    .flex-wrap,
-    .container-fluid,
-    .justify-content-between,
-    .py-5;
+  @extend .container, .py-5, .text-white;
 
+  align-items: stretch;
   margin-top: $nav-height;
 
-  &__item {
-    @extend .text-light, .mb-5;
-    flex-basis: 48%;
-
-    @include media-breakpoint-up(lg) {
-      flex-basis: 31%;
+  &__title {
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
     }
+  }
 
-    &__thumbnail {
-      @extend .rounded, .mb-3, .p-3, .d-flex, .align-items-center;
-      height: 20rem;
+  &__list {
+    @extend .d-md-flex, .flex-wrap, .justify-content-between, .mt-5;
 
-      &__image {
-        @extend .shadow, .rounded, .w-100, .mh-100;
+    &__item {
+      @extend .text-light, .mb-5, .pb-5;
+      flex-basis: 48%;
+
+      @include media-breakpoint-up(lg) {
+        flex-basis: 31%;
+      }
+
+      &__thumbnail {
+        @extend .rounded, .mb-3, .p-3, .h-100, .d-flex, .flex-column;
+
+        &__image {
+          @extend .shadow, .rounded, .img-fluid, .my-auto;
+        }
       }
     }
   }

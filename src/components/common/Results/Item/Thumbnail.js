@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Image from 'gatsby-image'
 import { object } from 'prop-types'
-import { extendParentClass, extendBaseClass } from '../../../utils/classes'
+import { extendParentClass, extendBaseClass } from '../../../../utils/classes'
 
 export class Thumbnail extends Component {
   static propTypes = {
