@@ -1,4 +1,6 @@
 .details {
+  @extend .pb-5;
+
   &__header {
     @extend .mb-5, %container, %nav-height;
     text-align: center;
@@ -12,15 +14,15 @@
     @extend .container-fluid;
 
     &__thumbnail {
-      @extend .img-fluid, .mb-5, .rounded, .shadow;
+      @extend .img-fluid, .mb-5, .rounded, .shadow, .mx-auto;
     }
   }
 
   &__list {
-    @extend .d-flex, .flex-wrap;
+    @extend .d-flex, .flex-wrap, .justify-content-around, .align-items-center;
 
     &__item {
-      @extend .img-fluid, .d-block, .w-100, .rounded, .shadow;
+      @extend .img-fluid, .d-block, .rounded, .shadow, .w-100;
 
       & + & {
         @extend .mt-5;

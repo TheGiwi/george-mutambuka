@@ -63,7 +63,8 @@ export const query = graphql`
           }
           childImageSharp {
             fluid(maxWidth: 1920, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
@@ -73,7 +74,8 @@ export const query = graphql`
           }
           childImageSharp {
             fluid(maxWidth: 1920, quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
             }
           }
         }
