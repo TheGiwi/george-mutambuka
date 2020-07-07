@@ -4,18 +4,13 @@
   align-items: stretch;
   margin-top: $nav-height;
 
-  &__title {
-    @include media-breakpoint-up(md) {
-      font-size: 3rem;
-    }
-  }
-
   &__list {
     @extend .d-md-flex, .flex-wrap, .justify-content-between, .mt-5;
 
     &__item {
-      @extend .text-light, .mb-5, .pb-5;
+      @extend .text-light, .pb-5;
       flex-basis: 48%;
+      margin-bottom: 5rem;
 
       @include media-breakpoint-up(lg) {
         flex-basis: 31%;

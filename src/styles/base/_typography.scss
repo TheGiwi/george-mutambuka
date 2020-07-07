@@ -14,3 +14,9 @@ h6 {
   font-family: $header-font-family;
   font-weight: 700;
 }
+
+h1 {
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+  }
+}

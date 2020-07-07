@@ -1,0 +1,30 @@
+.details {
+  &__header {
+    @extend .mb-5, %container, %nav-height;
+    text-align: center;
+
+    &__description {
+      @extend .text-light;
+    }
+  }
+
+  &__content {
+    @extend .container-fluid;
+
+    &__thumbnail {
+      @extend .img-fluid, .mb-5, .rounded, .shadow;
+    }
+  }
+
+  &__list {
+    @extend .d-flex, .flex-wrap;
+
+    &__item {
+      @extend .img-fluid, .d-block, .w-100, .rounded, .shadow;
+
+      & + & {
+        @extend .mt-5;
+      }
+    }
+  }
+}

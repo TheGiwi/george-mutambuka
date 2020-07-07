@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Thumbnail from './Thumbnail'
+import { Link } from 'gatsby'
 import { object, string, shape, arrayOf } from 'prop-types'
 import { extendParentClass, extendBaseClass } from '../../../../utils/classes'
 
@@ -18,15 +19,20 @@ export class Item extends Component {
 
   extend = extendBaseClass.bind(this)
 
+  getItemUrl = () => {
+    const { slug } = this.props.fields
+    return `/projects${slug}`
+  }
+
   render() {
     const { title, thumbnail } = this.props.frontmatter
     return (
-      <div className={this.baseClass}>
+      <Link className={this.baseClass} to={this.getItemUrl()}>
         <Thumbnail thumbnail={thumbnail} parentClass={this.baseClass} />
         <div>
-          <h2>{title}</h2>
+          <h3>{title}</h3>
         </div>
-      </div>
+      </Link>
     )
   }
 }

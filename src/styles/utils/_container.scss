@@ -1,0 +1,7 @@
+%nav-height {
+  margin-top: $nav-height;
+}
+
+%container {
+  @extend .container, .py-5;
+}

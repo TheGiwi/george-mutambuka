@@ -1,0 +1,187 @@
+
+3D DESIGN
+
+-------------------------
+
+
+Hard Drive Product Renders
+
+
+Proable hard drive product renders I created 
+for the Fantom Drives website
+https://www.fantomdrives.com/
+
+
+-------------------------
+
+
+Back Pack Product Render
+
+
+Back back I created and rendered in Blender with
+materials done in Substance Painter.
+This was a personal project.
+
+
+-------------------------
+
+
+Procedural Material Authoring 
+
+
+Created this procedural material using Substance Designer and
+then I recreated it from scratch in Blender nodes as a challenge
+to see if I can create the same material using different software.
+The project is available for download on the links below:
+
+https://www.blendswap.com/blend/23199
+
+https://thegiwi.com/resources.html
+
+
+-------------------------
+
+
+Interior Visualization
+
+
+Photorealistic living room interior 
+visualizations.
+
+
+-------------------------
+
+
+Concept Cyborg Character
+
+
+The story behind this concept is one of former military cyborg 
+soldier named Ife-M who is now a space freight-ship captain 
+with the T4 Space Freight company.
+
+I didn't want to create a full military style cyborg so 
+I thought melding a civilian job with a former military 
+soldier would give me something interesting to work with.
+
+
+-------------------------
+
+
+Baby Monitor Product Render
+
+
+Product render I did for the Dockwell baby monitor homepage.
+https://www.dockwell.com/
+
+
+-------------------------
+
+
+Exterior Achitectural Visualization
+
+
+Architectural visualization of a residential house I creted for a client 
+and commercial building I cretaed to test out 
+my marketplace cafe seating assets.
+
+
+------------------------
+
+
+Interior Kitchen Render
+
+
+Kitchen interior I created from my own original concept.
+This is a personal project.
+
+
+------------------------
+
+
+Laptop Product Design and Render
+
+
+Created and rendered this
+concept laptop 
+as a personal project.
+
+
+-----------------------
+
+
+Soap Brand Product Renders
+
+
+Product renders I created for soap brand NC Naturals
+These were rendered in passes in Blender 
+and compiled as layers in Photoshop so the client can 
+interchange the colors and labels.
+
+
+-----------------------
+
+
+Office Furniture Models For 3D Marketplaces
+
+
+Created these various office furniture 
+assets for 3D marketplaces.
+They can be downloaded for free or purchase on CG Trader:
+https://www.cgtrader.com/thegiwi
+
+
+-----------------------
+
+
+KRK Speakers Short Animation
+
+
+This is a personal project I didn't have any blueprints but used reference images from the product website http://www.krksys.com/Classic
+This project is available for download on Blendswap https://www.blendswap.com/blend/24177 and 
+CG Trader https://www.cgtrader.com/free-3d-models/electronics/audio/krk-classic-5-studio-monitor-speakers
+
+The materials are procedural textures created within Blender, which are editable on the native .blend project.
+Material texture PNGs were baked out  aswell.
+
+
+-----------------------
+
+
+Hard Surface Robot Concept
+
+
+Hard surface robot design I made as a personal project.
+This robot is inspired by Alberto Buzzi's drone which you 
+can view here https://artstation.com/artwork/Pmo6eL 
+
+The model consists of spheres with boolean modifiers and 
+kitbashing (from Creative Shrimp and some made by myself).
+I to achieve CAD like bevels and cuts,  used the bevel modifier 
+and Blender's then new weighted normal 
+and weld modifiers    
+
+
+-----------------------
+
+
+Spaceship Concept
+
+
+I created this spaceship to accompany the concept cyborg character which it shares the same theme centered around a space mining  company.
+I’m thinking of creating more ships with different cargo and freight functions. 
+The bigger picture is to create various assets that have to do with space mining and freight handling for a fictional space mining company. 
+However, since I’m doing this as a side project, time I will tell how far I’ll progress with it.
+
+
+-----------------------
+
+
+Jewelry Product Render
+
+
+Created these renders for a client a few years ago.
+They were created from drawings the client provided and I had
+to create 3D printable versions and product renders.
+
+
+================================================================
