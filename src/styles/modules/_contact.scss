@@ -1,0 +1,23 @@
+.contact {
+  @extend %nav-height, %container;
+  height: calc(100vh - #{$footer-height} - #{$nav-height});
+
+  &__header {
+    @extend .mb-5;
+  }
+
+  &__form {
+    font-weight: bold;
+
+    &__field {
+      & + & {
+        @extend .mt-4;
+      }
+    }
+
+    &__submit-btn {
+      @extend .btn, .text-dark, .mt-3;
+      background-color: rgb(241, 241, 46);
+    }
+  }
+}

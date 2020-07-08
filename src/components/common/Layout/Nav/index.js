@@ -10,7 +10,7 @@ export class Nav extends Component {
     const id = 'nav__content'
     return (
       <nav className={this.baseClass}>
-        <div className="container-fluid">
+        <div className="container">
           <Logo parentClass={this.baseClass} />
           <Toggle id={id} />
           <div className="collapse navbar-collapse" id={id}>

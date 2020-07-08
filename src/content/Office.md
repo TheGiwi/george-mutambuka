@@ -2,12 +2,13 @@
 title: Office Furniture Models For 3D Marketplaces
 thumbnail: '../images/Rend_preview_00.png'
 type: '3d'
-images: [
-  '../images/Render_prev_001.png'
-  '../images/Prev_005.JPG'
-  '../images/Prev_004.JPG'
-  '../images/Stools_renders_001.jpg'
-]
+images:
+  [
+    '../images/Render_prev_001.png',
+    '../images/Prev_005.JPG',
+    '../images/Prev_004.JPG',
+    '../images/Stools_renders_001.jpg',
+  ]
 ---
 
 Created these various office furniture

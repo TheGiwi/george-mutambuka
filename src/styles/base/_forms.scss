@@ -1,0 +1,11 @@
+.form-control {
+  @extend .text-white, .rounded-0;
+  background-color: black;
+  border: 0;
+  border-bottom: 1px solid white;
+
+  &:focus {
+    @extend .border, .border-primary, .rounded;
+    background-color: black;
+  }
+}

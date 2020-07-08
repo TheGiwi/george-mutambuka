@@ -5,3 +5,7 @@
 %container {
   @extend .container, .py-5;
 }
+
+%screen-height {
+  min-height: calc(100vh - #{$nav-height} - #{$footer-height});
+}

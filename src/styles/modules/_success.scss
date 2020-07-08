@@ -1,0 +1,16 @@
+.success {
+  @extend .container,
+    %nav-height,
+    %screen-height,
+    .d-sm-flex,
+    .align-items-center;
+
+  &__image {
+    @extend .img-fluid, .d-block, .mx-auto, .my-3, .order-2;
+    max-width: 50%;
+  }
+
+  &__link {
+    @extend .btn, .btn-primary, .mt-3, .order-1;
+  }
+}

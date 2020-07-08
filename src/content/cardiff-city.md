@@ -1,10 +1,7 @@
 ---
 title: 'Vector Illustrations'
 thumbnail: '../images/Cardiff_city_FC.png'
-images: [
-  '../images/Cardiff_city_fc2.jpg',
-  '../images/Cardiff_city_fc3.jpg
-]
+images: ['../images/Cardiff_city_fc2.jpg', '../images/Cardiff_city_fc3.jpg']
 ---
 
 Series of vector artwork I did

@@ -31,9 +31,10 @@
       }
 
       &__link {
-        @extend .nav-link, .text-light;
+        @extend .nav-link, .text-light, .px-0;
 
         &--active {
+          @extend .border-bottom, .border-primary;
           font-weight: bold;
         }
       }

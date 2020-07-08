@@ -1,10 +1,11 @@
 ---
 title: 'Hard Surface Robot Concept'
 thumbnail: '../images/Robot_dribbble_upload-01.jpg'
-images: [
-  '../images/Robot_dribbble_upload-02.JPG'
-  '../images/Robot_Product_render-03.JPG'
-]
+images:
+  [
+    '../images/Robot_dribbble_upload-02.JPG',
+    '../images/Robot_Product_render-03.JPG',
+  ]
 ---
 
 Hard surface robot design I made as a personal project.
