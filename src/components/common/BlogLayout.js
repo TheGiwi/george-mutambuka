@@ -46,7 +46,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
               }),
             }}
           >
-            <div className="container">
+            <div className="blog-container" id="blog-page">
               <div className="site-mast">
                 <div className="site-mast-left">
                   <Link to="/">

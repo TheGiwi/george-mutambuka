@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Layout from '../components/common/Layout'
 import { MetaData } from '../components/common/meta'
-import Carousel from '../pages/Home/Carousel'
+import Carousel from './Home/Carousel'
 
 /**
  * Main index page (home page)
