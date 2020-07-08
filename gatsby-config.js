@@ -48,6 +48,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: config.siteUrl,
   },
+  pathPrefix: '/george-mutambuka',
   plugins: [
     /**
      *  Content Plugins
