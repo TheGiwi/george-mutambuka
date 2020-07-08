@@ -10,12 +10,12 @@ export class Icons extends Component {
   links = [
     {
       icon: dribbbleIcon,
-      href: '#',
+      href: 'https://dribbble.com/TheGiwi',
       alt: 'Dribbble',
     },
     {
       icon: youtubeIcon,
-      href: '#',
+      href: 'https://www.youtube.com/channel/UC7sqF3SKz8PSNq8x7zCYI5A',
       alt: 'YouTube',
     },
   ]
