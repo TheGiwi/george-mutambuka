@@ -12,14 +12,23 @@ export class Images extends Component {
 
   extend = extendBaseClass.bind(this)
 
-  renderImages = () =>
-    this.props.images.map((image, index) => (
-      <Image
-        fluid={image.childImageSharp.fluid}
-        key={index}
-        className={this.extend('item')}
-      />
-    ))
+  renderImage = (image, index) => (
+    <Image
+      fluid={image.childImageSharp.fluid}
+      key={index}
+      className={this.extend('item')}
+    />
+  )
+
+  addNewImage = (images, image, index) => {
+    if (image) {
+      const newImage = this.renderImage(image, index)
+      return [...images, newImage]
+    }
+    return images
+  }
+
+  renderImages = () => this.props.images.reduce(this.addNewImage, [])
 
   render() {
     const { images } = this.props

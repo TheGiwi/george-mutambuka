@@ -22,7 +22,7 @@ export const query = graphql`
                 ...GatsbyImageColors
               }
               childImageSharp {
-                fluid(maxWidth: 800) {
+                fluid(maxWidth: 800, quality: 80) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
