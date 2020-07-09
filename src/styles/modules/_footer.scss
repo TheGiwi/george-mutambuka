@@ -1,5 +1,11 @@
+%footer-margin {
+  margin-bottom: 2rem;
+}
+
 .footer {
   @extend .d-flex,
+    .flex-column,
+    .flex-sm-row,
     .justify-content-between,
     .align-items-center,
     .container,
@@ -8,11 +14,11 @@
     .flex-wrap;
 
   font-weight: 300;
+  font-family: $header-font-family;
 
   &__icons {
-    @extend .d-flex, .pl-0;
+    @extend .d-flex, .pl-0, %footer-margin;
     list-style: none;
-    margin-bottom: 1rem;
 
     @include media-breakpoint-up(sm) {
       margin-bottom: 0;
@@ -30,7 +36,7 @@
           .align-items-center,
           .bg-white;
 
-        @include set-size(2.5rem);
+        @include set-size(2rem);
 
         &:hover {
           @extend .bg-primary;
@@ -41,17 +47,16 @@
         }
 
         &__icon {
-          @include set-size(1.5rem);
+          @include set-size(1.25rem);
         }
       }
     }
   }
 
   &__contact-btn {
-    @extend .btn, .d-flex, .align-items-center, .text-white;
+    @extend .btn, .d-flex, .align-items-center, .text-white, %footer-margin;
     text-transform: uppercase;
     flex-basis: 50%;
-    margin-bottom: 1rem;
 
     @include media-breakpoint-up(sm) {
       margin-bottom: 0;
@@ -60,6 +65,11 @@
 
     &:hover {
       @extend .bg-primary;
+    }
+
+    &__label {
+      font-family: $header-font-family;
+      font-weight: 300;
     }
 
     &__icon {

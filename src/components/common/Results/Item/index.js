@@ -30,7 +30,7 @@ export class Item extends Component {
       <Link className={this.baseClass} to={this.getItemUrl()}>
         <Thumbnail thumbnail={thumbnail} parentClass={this.baseClass} />
         <div>
-          <h3>{title}</h3>
+          <h2 className={this.extend('title')}>{title}</h2>
         </div>
       </Link>
     )

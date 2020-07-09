@@ -15,7 +15,7 @@ export class Mail extends Component {
     return (
       <Link to="/contact" className={this.baseClass}>
         <img src={mail} alt="Contact" className={this.extend('icon')} />
-        Contact
+        <span className={this.extend('label')}>Contact</span>
       </Link>
     )
   }

@@ -5,19 +5,41 @@
   margin-top: $nav-height;
 
   &__list {
-    @extend .d-md-flex, .flex-wrap, .justify-content-between, .mt-5;
+    @extend .d-md-flex,
+      .flex-md-row,
+      .flex-wrap,
+      .justify-content-md-between,
+      .mt-5;
 
     &__item {
-      @extend .text-light, .pb-5;
+      @extend .text-light, .d-flex, .flex-column;
       flex-basis: 48%;
-      margin-bottom: 5rem;
+
+      & + & {
+        margin-top: 1.5rem;
+
+        @include media-breakpoint-up(md) {
+          margin-top: 2rem;
+        }
+      }
 
       @include media-breakpoint-up(lg) {
         flex-basis: 31%;
       }
 
+      &__title {
+        font-size: 1rem;
+        font-weight: normal;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+
       &__thumbnail {
-        @extend .rounded, .mb-3, .p-3, .h-100, .d-flex, .flex-column;
+        @extend .rounded, .mb-3, .p-3, .d-flex, .flex-column;
+        flex-grow: 1;
 
         &__image {
           @extend .shadow, .rounded, .img-fluid, .my-auto;
