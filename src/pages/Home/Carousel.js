@@ -4,7 +4,6 @@ import kitchen from './kitchen.jpg'
 import krkSystems from './krk-systems.jpeg'
 import ship from './ship.png'
 import $ from 'jquery'
-import 'bootstrap/dist/js/bootstrap.bundle'
 
 export class Carousel extends Component {
   baseClass = 'home__carousel'
