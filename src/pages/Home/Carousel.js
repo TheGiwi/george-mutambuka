@@ -3,6 +3,8 @@ import { extendBaseClass, extend } from '../../utils/classes'
 import kitchen from './kitchen.jpg'
 import krkSystems from './krk-systems.jpeg'
 import ship from './ship.png'
+import $ from 'jquery'
+import 'bootstrap/dist/js/bootstrap.bundle'
 
 export class Carousel extends Component {
   baseClass = 'home__carousel'
@@ -48,9 +50,18 @@ export class Carousel extends Component {
 
   renderSlides = () => this.images.map(this.renderImage)
 
+  activateCarousel = () => {
+    const carousel = $(`.carousel`)
+    carousel.carousel('cycle')
+  }
+
+  componentDidMount() {
+    this.activateCarousel()
+  }
+
   render() {
     return (
-      <div className={`${this.baseClass} slide`} data-ride="carousel">
+      <div className={`${this.baseClass} carousel slide`}>
         <div className={this.innerClass}>{this.renderSlides()}</div>
       </div>
     )
