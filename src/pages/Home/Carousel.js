@@ -13,16 +13,16 @@ export class Carousel extends Component {
 
   images = [
     {
+      src: ship,
+      alt: 'Spaceship render',
+    },
+    {
       src: kitchen,
       alt: 'Kitchen',
     },
     {
       src: krkSystems,
       alt: 'Stereo Render for Krk Systems',
-    },
-    {
-      src: ship,
-      alt: 'Spaceship render',
     },
   ]
 
