@@ -2,7 +2,7 @@
   @extend .pb-5;
 
   &__header {
-    @extend .mb-5, %container, %nav-height;
+    @extend .mb-5, .container, .pt-5, %nav-height, .pb-0;
     text-align: center;
 
     &__description {
@@ -29,4 +29,8 @@
       }
     }
   }
+}
+
+.embedVideo-container {
+  @extend .mt-5, .rounded;
 }

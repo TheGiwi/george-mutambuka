@@ -18,3 +18,5 @@ CG Trader https://www.cgtrader.com/free-3d-models/electronics/audio/krk-classic-
 
 The materials are procedural textures created within Blender, which are editable on the native .blend project.
 Material texture PNGs were baked out aswell.
+
+`youtube: https://www.youtube.com/watch?v=DXnmTQxGyvE`

@@ -12,3 +12,5 @@ with the T4 Space Freight company.
 I didn't want to create a full military style cyborg so
 I thought melding a civilian job with a former military
 soldier would give me something interesting to work with.
+
+`youtube: https://www.youtube.com/watch?v=iWVl95mYhUU`
