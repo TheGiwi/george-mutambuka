@@ -9,7 +9,7 @@ export class Contact extends Component {
   extend = extendBaseClass.bind(this)
 
   render() {
-    const email = 'email@gmail.com'
+    const email = 'george@thegiwi.com'
     return (
       <Layout>
         <div className={this.baseClass}>
