@@ -16,7 +16,8 @@ export class Contact extends Component {
           <div className={this.extend('header')}>
             <h1>Contact me</h1>
             <p>
-              Email me at <a href={`mailto:${email}`}>{email} </a>
+              Contact me using the form below or email me at{' '}
+              <a href={`mailto:${email}`}>{email} </a>
             </p>
           </div>
           <Form parentClass={this.baseClass} />
