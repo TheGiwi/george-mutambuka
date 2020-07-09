@@ -55,7 +55,10 @@ export class Form extends Component {
 
   renderFields = () => this.fields.map(this.renderField)
 
-  submitValues = () => post('http://localhost:5000/api/contact', this.state)
+  submitValues = () => {
+    const url = process.env.GATSBY_API_URL
+    return post(url, this.state)
+  }
 
   handleSubmit = (event) => {
     event.preventDefault()
