@@ -1,13 +1,8 @@
 ---
 title: Interior Kitchen Render
-thumbnail: '../images/kitchen_rend_mini.jpg'
+thumbnail: '../images/kitchen_rend026.jpg'
 type: '3d'
-images:
-  [
-    '../images/kitchen_rend_sqr6.jpg',
-    '../images/kitchen_rend_sqr7.jpg',
-    '../images/kitchen_rend026.jpg',
-  ]
+images: ['../images/kitchen_rend_sqr6.jpg', '../images/kitchen_rend_sqr7.jpg']
 ---
 
 Kitchen interior I created from my own original concept.

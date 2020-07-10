@@ -1,9 +1,8 @@
 ---
 title: Baby Monitor Product Render
-thumbnail: '../images/Dribbble_export_Baby_Monitor.jpg'
+thumbnail: '../images/Product_render_panda.jpg'
 type: '3d'
-images:
-  ['../images/Product_render_panda.jpg', '../images/Product_render_monitor.jpg']
+images: ['../images/Product_render_monitor.jpg']
 ---
 
 Product render I did for the Dockwell baby monitor homepage.

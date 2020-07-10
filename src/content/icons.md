@@ -1,7 +1,7 @@
 ---
 
 title: 'Line vector icons'
-thumbnail: '../images/Iconography - Cricket-05.png'
+thumbnail: '../images/dribble_shot_icons-01.png'
 images: [
 '../images/Dribbble_shots-icons1.png',
 '../images/Dribbble_shots-icons2.png'
