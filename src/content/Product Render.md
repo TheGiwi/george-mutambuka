@@ -1,6 +1,7 @@
 ---
 title: Hard Drive Product Renders
 thumbnail: '../images/Product_renders_HDD2.jpg'
+modelIframe: ''
 type: '3d'
 images: ['../images/3D_product_render_001.jpg']
 ---

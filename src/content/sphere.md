@@ -1,6 +1,7 @@
 ---
 title: 'Procedural Material Authoring '
 thumbnail: '../images/Checkered_4Colors_render-sqr.jpg'
+modelIframe: ''
 type: '3d'
 images:
   [

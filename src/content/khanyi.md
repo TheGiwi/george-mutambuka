@@ -1,6 +1,7 @@
 ---
 title: 'Low poly vector art'
 thumbnail: '../images/khanyi IG upload.jpg'
+modelIframe: ''
 images: ['../images/khanyi TW upload.jpg']
 ---
 

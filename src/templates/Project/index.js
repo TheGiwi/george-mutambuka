@@ -16,6 +16,7 @@ export class Project extends Component {
           title: string.isRequired,
           images: arrayOf(object),
           thumbnail: object.isRequired,
+          modelIframe: string,
         }),
       }),
     }),
@@ -27,13 +28,17 @@ export class Project extends Component {
 
   render() {
     const { frontmatter, html } = this.props.data.markdownRemark
-    const { title, thumbnail, images } = frontmatter
+    const { title, thumbnail, images, modelIframe } = frontmatter
     const contentClass = this.extend('content')
     return (
       <Layout>
         <div className={this.baseClass}>
           <Header parentClass={this.baseClass} title={title} html={html} />
           <div className={contentClass}>
+            <div
+              dangerouslySetInnerHTML={{ __html: modelIframe }}
+              className={extend(contentClass, 'model')}
+            />
             {thumbnail && (
               <Image
                 fluid={thumbnail.childImageSharp.fluid}
@@ -57,6 +62,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        modelIframe
         thumbnail {
           colors {
             ...GatsbyImageColors

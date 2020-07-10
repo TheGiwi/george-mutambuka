@@ -1,6 +1,7 @@
 ---
 title: Soap Brand Product Renders
 thumbnail: '../images/NC Bars 004.png'
+modelIframe: ''
 type: '3d'
 images: ['../images/NC Naturals Soap.png']
 ---

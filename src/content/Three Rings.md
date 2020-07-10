@@ -1,6 +1,7 @@
 ---
 title: Jewelry Product Render
 thumbnail: '../images/three rings_render1.jpg'
+modelIframe: ''
 type: '3d'
 images: []
 ---

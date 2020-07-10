@@ -1,6 +1,7 @@
 ---
 title: 'Isometric Vector Art'
 thumbnail: '../images/Dribbble_shots-Isometric1.png'
+modelIframe: ''
 images:
   [
     '../images/Dribbble_shots-Isometric2.png',

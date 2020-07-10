@@ -1,6 +1,7 @@
 ---
 title: Baby Monitor Product Render
 thumbnail: '../images/Product_render_panda.jpg'
+modelIframe: ''
 type: '3d'
 images: ['../images/Product_render_monitor.jpg']
 ---

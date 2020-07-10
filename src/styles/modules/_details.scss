@@ -13,6 +13,10 @@
   &__content {
     @extend .container-fluid;
 
+    &__model {
+      @extend .rounded, .my-5, .d-flex, .justify-content-center;
+    }
+
     &__thumbnail {
       @extend .img-fluid, .mb-5, .rounded, .shadow, .mx-auto;
     }
