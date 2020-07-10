@@ -1,5 +1,5 @@
 require('jquery/dist/jquery.min.js')
-require('bootstrap/js/dist/carousel')
+require('bootstrap/dist/js/bootstrap.bundle')
 
 /* eslint-disable */
 /**

@@ -1,5 +1,5 @@
 .contact {
-  @extend %nav-height, %container;
+  @extend %container;
   min-height: calc(100vh - #{$footer-height} - #{$nav-height});
 
   &__header {

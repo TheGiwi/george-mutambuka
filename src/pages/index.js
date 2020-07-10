@@ -18,7 +18,7 @@ const Index = ({ location }) => {
   return (
     <>
       <MetaData location={location} />
-      <Layout isHome={true}>
+      <Layout isNavFixed={true}>
         <div className={baseClass}>
           <Carousel />
         </div>

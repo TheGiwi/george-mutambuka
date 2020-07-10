@@ -1,15 +1,14 @@
 .nav {
-  @extend .position-absolute,
-    .navbar,
-    .navbar-expand-lg,
-    .navbar-dark,
-    .py-2,
-    .shadow;
-  background-color: transparentize($color: black, $amount: 0.4);
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: $zindex-sticky;
+  @extend .navbar, .navbar-expand-lg, .navbar-dark, .py-2, .shadow;
+
+  &--home {
+    @extend .position-absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $zindex-sticky;
+    background-color: transparentize($color: black, $amount: 0.4);
+  }
 
   &__logo {
     @extend .navbar-brand;
@@ -26,8 +25,10 @@
     &__item {
       @extend .nav-item;
 
-      & + & {
-        @extend .ml-5;
+      @include media-breakpoint-up(lg) {
+        & + & {
+          margin-left: 3rem;
+        }
       }
 
       &__link {

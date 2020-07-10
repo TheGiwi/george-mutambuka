@@ -2,7 +2,6 @@
   @extend .container, .py-5, .text-white;
 
   align-items: stretch;
-  margin-top: $nav-height;
 
   &__list {
     @extend .d-md-flex,

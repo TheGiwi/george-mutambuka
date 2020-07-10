@@ -2,7 +2,7 @@
   @extend .pb-5;
 
   &__header {
-    @extend .mb-5, .container, .pt-5, %nav-height, .pb-0;
+    @extend .mb-5, .container, .pt-5, .pb-0;
     text-align: center;
 
     &__description {
