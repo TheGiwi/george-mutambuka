@@ -1,3 +1,7 @@
 @function get-color($name) {
   @return map-get($theme-colors, $name);
 }
+
+@function get-blog-color($name) {
+  @return map-get($blog-colors, $name);
+}

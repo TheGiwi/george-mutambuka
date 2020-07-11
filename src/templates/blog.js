@@ -14,13 +14,13 @@ import { MetaData } from '../components/common/meta'
  *
  */
 const Index = ({ data, location, pageContext }) => {
-  const posts = data.allGhostPost.edges
+  const posts = data.allMarkdownRemark.edges
 
   return (
     <>
       <MetaData location={location} />
       <Layout isHome={true}>
-        <div className="container">
+        <div>
           <section className="post-feed">
             {posts.map(({ node }) => (
               // The tag below includes the markup for each post - components/common/PostCard.js
@@ -36,7 +36,7 @@ const Index = ({ data, location, pageContext }) => {
 
 Index.propTypes = {
   data: PropTypes.shape({
-    allGhostPost: PropTypes.object.isRequired,
+    allMarkdownRemark: PropTypes.object.isRequired,
   }).isRequired,
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,
@@ -50,14 +50,31 @@ export default Index
 // The `limit` and `skip` values are used for pagination
 export const pageQuery = graphql`
   query GhostPostQuery($limit: Int!, $skip: Int!) {
-    allGhostPost(
-      sort: { order: DESC, fields: [published_at] }
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { fileAbsolutePath: { regex: "/posts/g" } }
       limit: $limit
       skip: $skip
     ) {
       edges {
         node {
-          ...GhostPostFields
+          excerpt
+          timeToRead
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1920, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluidLimitPresentationSize
+                }
+              }
+            }
+          }
         }
       }
     }

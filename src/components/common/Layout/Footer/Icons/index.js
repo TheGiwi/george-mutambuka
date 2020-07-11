@@ -1,24 +1,12 @@
 import React, { Component } from 'react'
-import dribbbleIcon from './dribbble.svg'
-import youtubeIcon from './youtube.svg'
 import Item from './Item'
 import { extendParentClass } from '../../../../../utils/classes'
+import { icons } from '../../../../../links'
 
 export class Icons extends Component {
   baseClass = extendParentClass.bind(this)('icons')
 
-  links = [
-    {
-      icon: dribbbleIcon,
-      href: 'https://dribbble.com/TheGiwi',
-      alt: 'Dribbble',
-    },
-    {
-      icon: youtubeIcon,
-      href: 'https://www.youtube.com/channel/UC7sqF3SKz8PSNq8x7zCYI5A',
-      alt: 'YouTube',
-    },
-  ]
+  links = icons
 
   renderLink = (linkData, index) => (
     <Item parentClass={this.baseClass} {...linkData} key={index} />

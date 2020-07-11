@@ -4,11 +4,8 @@ import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Navigation } from '.'
-import config from '../../utils/siteConfig'
-
-// Styles
-// import '../../styles/app.css'
+import { Navigation } from '..'
+import Icons from './Icons/index'
 
 /**
  * Main layout component
@@ -20,18 +17,11 @@ import config from '../../utils/siteConfig'
  */
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
   const site = data.allGhostSettings.edges[0].node
-  const twitterUrl = site.twitter
-    ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}`
-    : null
-  const facebookUrl = site.facebook
-    ? `https://www.facebook.com/${site.facebook.replace(/^\//, ``)}`
-    : null
 
   return (
     <>
       <Helmet>
         <html lang={site.lang} />
-        <style type="text/css">{`${site.codeinjection_styles}`}</style>
         <body className={bodyClass} />
       </Helmet>
 
@@ -46,7 +36,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
               }),
             }}
           >
-            <div className="blog-container" id="blog-page">
+            <div className="container">
               <div className="site-mast">
                 <div className="site-mast-left">
                   <Link to="/">
@@ -65,52 +55,15 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                   </Link>
                 </div>
                 <div className="site-mast-right">
-                  {site.twitter && (
-                    <a
-                      href={twitterUrl}
-                      className="site-nav-item"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        className="site-nav-icon"
-                        src="/images/icons/twitter.svg"
-                        alt="Twitter"
-                      />
-                    </a>
-                  )}
-                  {site.facebook && (
-                    <a
-                      href={facebookUrl}
-                      className="site-nav-item"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        className="site-nav-icon"
-                        src="/images/icons/facebook.svg"
-                        alt="Facebook"
-                      />
-                    </a>
-                  )}
-                  <a
-                    className="site-nav-item"
-                    href={`https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className="site-nav-icon"
-                      src="/images/icons/rss.svg"
-                      alt="RSS Feed"
-                    />
-                  </a>
+                  <Icons parentClass="header" />
                 </div>
               </div>
               {isHome ? (
                 <div className="site-banner">
-                  <h1 className="site-banner-title">{site.title}</h1>
-                  <p className="site-banner-desc">{site.description}</p>
+                  <h1 className="site-banner-title">George Mutambuka</h1>
+                  <p className="site-banner-desc">
+                    Professional 3D Graphics and Renders
+                  </p>
                 </div>
               ) : null}
               <nav className="site-nav">
@@ -127,7 +80,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </div>
           </header>
 
-          <main className="site-main">
+          <main className="site-main blog-container">
             {/* All the main content gets inserted here, index.js, post.js */}
             {children}
           </main>
@@ -183,7 +136,7 @@ const DefaultLayoutSettingsQuery = (props) => (
             }
           }
         }
-        file(relativePath: { eq: "ghost-icon.png" }) {
+        file(relativePath: { eq: "logo.svg" }) {
           childImageSharp {
             fixed(width: 30, height: 30) {
               ...GatsbyImageSharpFixed

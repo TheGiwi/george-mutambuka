@@ -4,24 +4,14 @@ import {
   extendBaseClass,
 } from '../../../../../utils/classes'
 import Link from './Link'
+import links from '../../../../../links'
 
 export class Links extends Component {
   links = [
+    ...links,
     {
-      children: `Home`,
-      to: `/`,
-    },
-    {
-      children: `Vector Projects`,
-      to: `/vector`,
-    },
-    {
-      children: '3D Projects',
-      to: '/3d',
-    },
-    {
-      children: `Contact`,
-      to: `/contact`,
+      children: 'Blog',
+      to: '/blog',
     },
   ]
 
