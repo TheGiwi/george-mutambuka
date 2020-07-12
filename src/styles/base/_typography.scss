@@ -23,6 +23,12 @@ $blog-font-sizes: (
   xs: 0.875rem,
 );
 
+@each $name, $size in $blog-font-sizes {
+  %blog-font-#{$name} {
+    font-size: $size;
+  }
+}
+
 * {
   font-family: $body-font-family;
 }
@@ -40,5 +46,71 @@ h6 {
 h1 {
   @include media-breakpoint-up(md) {
     font-size: 3rem;
+  }
+}
+
+#blog-page {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %blog-sans-serif;
+    margin-top: 0;
+    color: get-blog-color('base');
+    line-height: 1.15;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1 {
+    @extend %blog-font-lg;
+    margin: 0 0 0.5em 0;
+    font-weight: 700;
+
+    @include media-breakpoint-up(md) {
+      font-size: get-blog-font('xl');
+    }
+  }
+
+  h2 {
+    @extend %blog-font-md;
+    margin: 1.5em 0 0.5em 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: get-blog-font('lg');
+    }
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %blog-font-sm;
+
+    @include media-breakpoint-up(md) {
+      font-size: get-blog-font('md');
+    }
+  }
+
+  h3 {
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 500;
+  }
+
+  h4 {
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 500;
+  }
+
+  h5 {
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 500;
+  }
+
+  h6 {
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 500;
   }
 }

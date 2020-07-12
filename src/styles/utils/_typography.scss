@@ -1,9 +1,3 @@
 @function get-blog-font($name) {
   @return map-get($blog-fonts, $name);
 }
-
-@each $name, $size in $blog-font-sizes {
-  %blog-font-#{$name} {
-    font-size: $size;
-  }
-}

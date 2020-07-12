@@ -4,11 +4,19 @@ import { Link } from 'gatsby'
 import Image from 'gatsby-image'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
 
+const formatDate = (date) => {
+  const month = date.toLocaleString('en-US', { month: 'short' })
+  const dateNumber = date.getDate()
+  const year = date.getFullYear()
+  return `Published ${month} ${dateNumber}, ${year}`
+}
+
 const PostCard = ({ post }) => {
   const url = `/blog${post.fields.slug}`
   const readingTime = readingTimeHelper(post)
-  const author = 'George Mutambuka'
-  const { thumbnail, title } = post.frontmatter
+  // const author = 'George Mutambuka'
+  const { thumbnail, title, date } = post.frontmatter
+  const formattedDate = formatDate(new Date(date))
   return (
     <Link to={url} className="post-card">
       <header className="post-card-header">
@@ -22,16 +30,7 @@ const PostCard = ({ post }) => {
       </header>
       <section className="post-card-excerpt">{post.excerpt}</section>
       <footer className="post-card-footer">
-        <div className="post-card-footer-left">
-          <div className="post-card-avatar">
-            <img
-              className="default-avatar"
-              src="/images/icons/avatar.svg"
-              alt={author}
-            />
-          </div>
-          <span>{author}</span>
-        </div>
+        <div className="post-card-footer-left">{formattedDate}</div>
         <div className="post-card-footer-right">
           <div>{readingTime}</div>
         </div>
@@ -48,6 +47,7 @@ PostCard.propTypes = {
     frontmatter: PropTypes.shape({
       title: PropTypes.string.isRequired,
       thumbnail: PropTypes.object.isRequired,
+      date: PropTypes.instanceOf(Date),
     }).isRequired,
     excerpt: PropTypes.string.isRequired,
   }).isRequired,

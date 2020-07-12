@@ -12,7 +12,12 @@ export default ThreeDimensionalProjects
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: { frontmatter: { type: { eq: "3d" } } }) {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { type: { eq: "3d" } }
+        fileAbsolutePath: { regex: "/content/" }
+      }
+    ) {
       edges {
         node {
           fields {

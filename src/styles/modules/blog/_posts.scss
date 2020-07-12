@@ -99,3 +99,26 @@
 .post-card-avatar .default-avatar {
   width: 26px;
 }
+
+.post {
+  @extend .container;
+
+  &__content {
+    @extend .content;
+
+    &__image {
+      @extend .img-fluid, .rounded, .shadow-sm, .mb-5;
+    }
+
+    &__body p {
+      @extend %blog-serif;
+      font-size: 1.125rem;
+      line-height: 1.7em;
+      color: get-blog-color('base');
+
+      @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
         <body className={bodyClass} />
       </Helmet>
 
-      <div className="viewport">
+      <div className="viewport" id="blog-page">
         <div className="viewport-top">
           {/* The main header section on top of the screen */}
           <header

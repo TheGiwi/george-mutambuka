@@ -9,7 +9,12 @@ export class VectorProjects extends Component {
 
 export const query = graphql`
   {
-    allMarkdownRemark(filter: { frontmatter: { type: { ne: "3d" } } }) {
+    allMarkdownRemark(
+      filter: {
+        frontmatter: { type: { ne: "3d" } }
+        fileAbsolutePath: { regex: "/content/" }
+      }
+    ) {
       edges {
         node {
           fields {

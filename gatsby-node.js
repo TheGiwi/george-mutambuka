@@ -5,7 +5,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const getPageQuery = () => `
   {
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/g" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/content/" } }) {
       edges {
         node {
           fields {
@@ -58,7 +58,7 @@ exports.createPages = async ({ graphql, actions }) => {
     {
       allMarkdownRemark(
         sort: { order: ASC, fields: frontmatter___date }
-        filter: { fileAbsolutePath: { regex: "/posts/g" } }
+        filter: { fileAbsolutePath: { regex: "/posts/" } }
       ) {
         edges {
           node {
@@ -97,7 +97,7 @@ exports.createPages = async ({ graphql, actions }) => {
   pages.forEach(({ node }) => {
     // This part here defines, that our pages will use
     // a `/:slug/` permalink.
-    node.url = `/${node.slug}/`
+    node.url = `/blog${node.slug}`
 
     createPage({
       path: node.url,
@@ -115,7 +115,7 @@ exports.createPages = async ({ graphql, actions }) => {
     // This part here defines, that our posts will use
     // a `/:slug/` permalink.
     const { slug } = node.fields
-    node.url = `/blog/${slug}/`
+    node.url = `/blog${slug}`
 
     createPage({
       path: node.url,
@@ -134,13 +134,7 @@ exports.createPages = async ({ graphql, actions }) => {
     items: posts,
     itemsPerPage: postsPerPage,
     component: blogTemplate,
-    pathPrefix: ({ pageNumber }) => {
-      if (pageNumber === 0) {
-        return `/blog`
-      } else {
-        return `/blog/page`
-      }
-    },
+    pathPrefix: () => `/blog/page`,
   })
 }
 
@@ -148,7 +142,7 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `projects` })
+    const slug = createFilePath({ node, getNode })
     createNodeField({
       node,
       name: `slug`,
