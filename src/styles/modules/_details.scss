@@ -20,6 +20,19 @@
     &__thumbnail {
       @extend .img-fluid, .mb-5, .rounded, .shadow, .mx-auto;
     }
+
+    &__video {
+      @extend .d-flex, .justify-content-center;
+
+      iframe {
+        @extend .img-fluid;
+
+        @include media-breakpoint-up(md) {
+          height: 50vh;
+          width: 50%;
+        }
+      }
+    }
   }
 
   &__list {
@@ -33,8 +46,4 @@
       }
     }
   }
-}
-
-.embedVideo-container {
-  @extend .mt-5, .rounded;
 }

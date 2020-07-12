@@ -2,6 +2,7 @@
 title: 'Hard Surface Robot Concept'
 thumbnail: '../images/Robot_dribbble_upload-01.jpg'
 modelIframe: ''
+youtube: 'https://www.youtube.com/embed/AN4kmbJLCec'
 images:
   [
     '../images/Robot_dribbble_upload-02.JPG',
@@ -18,5 +19,3 @@ kitbashing (from Creative Shrimp and some made by myself).
 I to achieve CAD like bevels and cuts, used the bevel modifier
 and Blender's then new weighted normal
 and weld modifiers
-
-`youtube: https://www.youtube.com/watch?v=AN4kmbJLCec`
