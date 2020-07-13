@@ -4,3 +4,6 @@
 
 [template]
   incoming-hooks = ["Ghost"]
+
+[context.production]
+  environment = { GATSBY_API_URL="https://thegiwi-email.herokuapp.com/api/contact" }
