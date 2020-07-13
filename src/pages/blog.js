@@ -22,9 +22,9 @@ const Index = ({ data, location, pageContext }) => {
       <Layout isHome={true}>
         <div>
           <section className="post-feed">
-            {posts.map(({ node }) => (
+            {posts.map(({ node }, index) => (
               // The tag below includes the markup for each post - components/common/PostCard.js
-              <PostCard key={node.id} post={node} />
+              <PostCard key={index} post={node} />
             ))}
           </section>
           <Pagination pageContext={pageContext} />

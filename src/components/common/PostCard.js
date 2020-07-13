@@ -47,7 +47,7 @@ PostCard.propTypes = {
     frontmatter: PropTypes.shape({
       title: PropTypes.string.isRequired,
       thumbnail: PropTypes.object.isRequired,
-      date: PropTypes.instanceOf(Date),
+      date: PropTypes.string.isRequired,
     }).isRequired,
     excerpt: PropTypes.string.isRequired,
   }).isRequired,

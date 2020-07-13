@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link as BaseLink } from 'gatsby'
+import { string, node } from 'prop-types'
 import {
   extendParentClass,
   extendBaseClass,
@@ -7,6 +8,12 @@ import {
 } from '../../../../../utils/classes'
 
 export class Link extends Component {
+  static propTypes = {
+    children: string.isRequired,
+    to: string.isRequired,
+    parentClass: string.isRequired,
+  }
+
   baseClass = extendParentClass.bind(this)('item')
 
   extend = extendBaseClass.bind(this)
@@ -14,13 +21,12 @@ export class Link extends Component {
   render() {
     const linkClass = this.extend('link')
     const activeClass = getClassWithVariant('active', linkClass)
+    const { children, to } = this.props
     return (
       <li className={this.baseClass}>
-        <BaseLink
-          {...this.props}
-          className={linkClass}
-          activeClassName={activeClass}
-        />
+        <BaseLink to={to} className={linkClass} activeClassName={activeClass}>
+          {children}
+        </BaseLink>
       </li>
     )
   }
