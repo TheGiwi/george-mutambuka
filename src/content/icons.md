@@ -4,6 +4,7 @@ title: 'Line vector icons'
 thumbnail: '../images/dribble_shot_icons-01.png'
 modelIframe: ''
 images: [
+'../images/dribble_shot_icons-01.png',
 '../images/Dribbble_shots-icons1.png',
 '../images/Dribbble_shots-icons2.png'
 ]

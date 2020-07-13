@@ -2,7 +2,7 @@
 title: 'Flat vector icons'
 thumbnail: '../images/Iconography_music-SQR.png'
 modelIframe: ''
-images: ['../images/UI glyph icons24.png', '../images/icons-08b.png']
+images: ['../images/Iconography_music.png', '../images/UI glyph icons24.png', '../images/icons-08b.png']
 ---
 
 Various flat vector icons I’ve done for clients and
