@@ -60,9 +60,9 @@ export class Form extends Component {
     return post(url, this.state)
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault()
-    this.submitValues()
+    await this.submitValues()
     window.location.href = '/success'
   }
 
