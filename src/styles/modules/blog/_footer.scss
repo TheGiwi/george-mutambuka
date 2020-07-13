@@ -1,23 +1,40 @@
 .site-foot {
   @extend %blog-font-sm;
   padding: 20px 0 40px 0;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7) !important;
   background: get-blog-color('base');
 }
 
 .site-foot-nav {
-  @extend .d-md-flex;
+  @extend .d-lg-flex;
   align-items: center;
   justify-content: space-between;
+
+  &-left {
+    @extend .order-2;
+  }
+
+  &-right {
+    @extend .d-flex, .flex-column, .flex-sm-row, .align-items-center, .order-1;
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+  }
 }
 
 .site-foot-nav a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7) !important;
+
+  & + & {
+    @extend .ml-3;
+  }
 }
 
 .site-foot-nav a:hover {
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 .site-foot-nav-right a {

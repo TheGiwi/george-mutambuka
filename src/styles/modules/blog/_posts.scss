@@ -1,4 +1,5 @@
 .post-feed {
+  @extend .container;
   display: grid;
   justify-content: space-between;
   grid-gap: 30px;
