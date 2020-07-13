@@ -1,6 +1,6 @@
 ---
 title: 'Vector Illustrations'
-thumbnail: '../images/Cardiff_city_FC.png'
+thumbnail: '../images/Cardiff_city_FC-SQR.png'
 modelIframe: ''
 images: ['../images/Cardiff_city_fc2.jpg', '../images/Cardiff_city_fc3.jpg']
 ---
