@@ -2,7 +2,7 @@
 title: 'Low poly vector art'
 thumbnail: '../images/khanyi IG upload.jpg'
 modelIframe: ''
-images: ['../images/khanyi TW upload.jpg']
+images: ['../images/khanyi IG upload.jpg', '../images/khanyi rectangle.jpg']
 ---
 
 My take on triangulation low poly vector art.
