@@ -2,6 +2,7 @@
 title: 'Stylized Vector Illustration '
 thumbnail: '../images/german_shepherd-WM.png'
 modelIframe: ''
+images: ['../images/german_shepherd-WM.png']
 ---
 
 Monochrome vector drawing I created for a client of mine.
