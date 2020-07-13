@@ -106,7 +106,8 @@
   &__content {
     @extend .content;
 
-    &__image {
+    &__image,
+    img {
       @extend .img-fluid, .rounded, .shadow-sm, .mb-5;
     }
 

@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
 
 import { Navigation } from '..'
 import Icons from './Icons/index'
+import logo from '../../../../static/images/logo.svg'
 
 /**
  * Main layout component
@@ -40,18 +40,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
               <div className="site-mast">
                 <div className="site-mast-left">
                   <Link to="/">
-                    {site.logo ? (
-                      <img
-                        className="site-logo"
-                        src={site.logo}
-                        alt={site.title}
-                      />
-                    ) : (
-                      <Img
-                        fixed={data.file.childImageSharp.fixed}
-                        alt={site.title}
-                      />
-                    )}
+                    <img className="site-logo" src={logo} alt={site.title} />
                   </Link>
                 </div>
                 <div className="site-mast-right">
@@ -72,9 +61,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                   <Navigation data={site.navigation} navClass="site-nav-item" />
                 </div>
                 <div className="site-nav-right">
-                  <Link className="site-nav-button" to="/about">
+                  {/* <Link className="site-nav-button" to="/about">
                     About
-                  </Link>
+                  </Link> */}
                 </div>
               </nav>
             </div>
@@ -133,13 +122,6 @@ const DefaultLayoutSettingsQuery = (props) => (
           edges {
             node {
               ...GhostSettingsFields
-            }
-          }
-        }
-        file(relativePath: { eq: "logo.svg" }) {
-          childImageSharp {
-            fixed(width: 30, height: 30) {
-              ...GatsbyImageSharpFixed
             }
           }
         }

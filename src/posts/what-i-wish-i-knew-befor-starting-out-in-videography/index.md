@@ -48,7 +48,9 @@ Some digital broadcast (SD and HD) and all anologue TV are broadcast using inter
 
 **Interlacing Issues:**  There are no problems when displaying an interlaced video on an interlaced display like those old analogue CRT TVs with “big backs”, however problems arise when you have to display on a progressive medium like YouTube or modern LCD flat screen displays, such video quality problems are fixed by using a process called **deinterlacing**. In a computer screen (progressive) the media player does it for you, in a DVD that is connected to a progressive display (flat screen TV) the DVD player will handle the interlacing and on a broadcast the TV or decoder/set top box (in the case of satellite, cable or digital terrestrial) handles the conversion from interlaced source to progressive display. However if you’re editing a mixture of interlaced and progressive footage in the same timeline; you will have to decide which footage to convert so you won’t run into any problems in your final output.
 
-![Interlaced_video_frame*(car*wheel)](images/interlaced_video_frame_car_wheel.jpg) Interlaced Video problem. (By Mikus \[Public domain\], from Wikimedia Commons)[Source](<https://commons.wikimedia.org/wiki/File:Interlaced_video_frame*(car_wheel).jpg>)**Pixels**
+![Interlaced_video_frame*(car*wheel)](images/interlaced_video_frame_car_wheel.jpg) Interlaced Video problem. (By Mikus \[Public domain\], from Wikimedia Commons)[Source](<https://commons.wikimedia.org/wiki/File:Interlaced_video_frame*(car_wheel).jpg>)
+
+**Pixels**
 
 A **pixel** is a single dot on a screen that makes up the overall picture, as mentioned before the number of pixels indicates the resolution of the image.
 
