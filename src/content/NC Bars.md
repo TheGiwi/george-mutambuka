@@ -1,9 +1,10 @@
 ---
 title: Soap Brand Product Renders
-thumbnail: '../images/NC Bars 004.png'
+thumbnail: '../images/NC Bars 004-SQR.png'
+order: 15
 modelIframe: ''
 type: '3d'
-images: ['../images/NC Naturals Soap.png']
+images: ['../images/NC Bars 004.png', '../images/NC Naturals Soap.png']
 ---
 
 Product renders I created for soap brand NC Naturals

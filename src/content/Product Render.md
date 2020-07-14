@@ -1,9 +1,14 @@
 ---
 title: Hard Drive Product Renders
-thumbnail: '../images/Product_renders_HDD2.jpg'
+thumbnail: '../images/Product_renders_HDD2-SQR.jpg'
+order: 8
 modelIframe: ''
 type: '3d'
-images: ['../images/3D_product_render_001.jpg']
+images:
+  [
+    '../images/Product_renders_HDD2.jpg',
+    '../images/Product_renders_001_HDD1.jpg',
+  ]
 ---
 
 Proable hard drive product renders I created

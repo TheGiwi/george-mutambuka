@@ -1,9 +1,9 @@
 ---
 title: 'Video theme icon set'
 thumbnail: '../images/icons_video.png'
+order: 0
 modelIframe: ''
-images:
-  ['../images/icons_video.png', '../images/Iconography_video-01.png', '../images/Iconography_video-04.png']
+images: ['../images/icons_video.png', '../images/Iconography_video-04.png']
 ---
 
 Icons for the professional video and

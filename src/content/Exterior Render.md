@@ -1,9 +1,14 @@
 ---
 title: Exterior Achitectural Visualization
 type: '3d'
-thumbnail: ../images//Exterior_render.JPG
+thumbnail: ../images/Exterior House_rend-01-SQR.JPG
+order: 3
 images:
-  ['../images/Exterior_render_018.JPG', '../images/Exterior House_rend-01.JPG']
+  [
+    '../images/Exterior House_rend-01.JPG',
+    '../images/Exterior_render.JPG',
+    '../images/Exterior_render_018.JPG',
+  ]
 ---
 
 Architectural visualization of a residential house I creted for a client

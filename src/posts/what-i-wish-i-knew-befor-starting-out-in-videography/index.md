@@ -2,6 +2,7 @@
 title: 'What I Wish I Knew Before Starting Out In Videography'
 date: '2018-08-17'
 thumbnail: './images/header-image.jpg'
+order: 0
 ---
 
 As a mostly self-taught videographer, I had to learn a lot of things the painful way (but thanks to Google and forums like [creativecow.net](https://www.creativecow.net/) I was helped to overcome), this is why I’ve decided to compile this article for whomever may be in the situation I was in as a newbie in video editing.

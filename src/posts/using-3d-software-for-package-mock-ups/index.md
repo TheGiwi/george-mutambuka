@@ -2,6 +2,7 @@
 title: 'Using 3D Software For Package Mock-Ups'
 date: '2017-07-22'
 thumbnail: './images/pkg_multi-angle.jpg'
+order: 0
 ---
 
 When designing a product - like in the case of package design, it is important or even necessary to include a mock-up when showing to your client.

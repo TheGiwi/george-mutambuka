@@ -2,6 +2,7 @@
 title: "New Year's Phases"
 date: '2018-01-21'
 thumbnail: './images/banner-resolutions.jpg'
+order: 0
 ---
 
 The first month of 2018 is already zooming by and I feel that it may be a bit too late for me to be writing this. But any-who, I let procrastination get the better of me but as the saying goes; better late than never.

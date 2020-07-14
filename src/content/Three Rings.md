@@ -1,9 +1,10 @@
 ---
 title: Jewelry Product Render
-thumbnail: '../images/three rings_render1.jpg'
+thumbnail: '../images/three rings_render-SQR.jpg'
+order: 13
 modelIframe: ''
 type: '3d'
-images: []
+images: ['../images/three rings_render1.jpg']
 ---
 
 Created these renders for a client a few years ago.

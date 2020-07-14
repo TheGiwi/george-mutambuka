@@ -1,10 +1,12 @@
 ---
 title: 'Hard Surface Robot Concept'
-thumbnail: '../images/Robot_dribbble_upload-01.jpg'
+thumbnail: '../images/Robot_Product_render-Walpaper-1-SQR.jpg'
+order: 4
 modelIframe: ''
 youtube: 'https://www.youtube.com/embed/AN4kmbJLCec'
 images:
   [
+    '../images/Robot_dribbble_upload-01.jpg',
     '../images/Robot_dribbble_upload-02.JPG',
     '../images/Robot_Product_render-03.JPG',
   ]

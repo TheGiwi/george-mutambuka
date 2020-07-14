@@ -2,6 +2,7 @@
 
 title: "Back Pack Product Render"
 thumbnail: '../images/Bag_render9.jpg'
+order: 14
 modelIframe: ''
 type: '3d'
 images: [
