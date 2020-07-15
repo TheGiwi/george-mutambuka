@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { extendBaseClass, extend } from '../../../utils/classes'
 import $ from 'jquery'
-import { dataTypes } from '../types'
+import { dataTypes } from '../../../components/Home/types'
 import Slide from './Slide'
 
 export class Carousel extends Component {

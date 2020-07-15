@@ -5,7 +5,7 @@ import Layout from '../components/common/Layout'
 import { MetaData } from '../components/common/meta'
 import Carousel from './Home/Carousel/index'
 import { graphql } from 'gatsby'
-import { dataTypes } from './Home/types'
+import { dataTypes } from '../components/Home/types'
 
 /**
  * Main index page (home page)
