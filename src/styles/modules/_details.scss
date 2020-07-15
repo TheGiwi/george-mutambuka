@@ -39,11 +39,7 @@
     @extend .d-flex, .flex-wrap, .justify-content-around, .align-items-center;
 
     &__item {
-      @extend .img-fluid, .d-block, .rounded, .shadow, .w-100;
-
-      & + & {
-        @extend .mt-5;
-      }
+      @extend .img-fluid, .d-block, .rounded, .shadow, .w-100, .mt-5;
     }
   }
 }
