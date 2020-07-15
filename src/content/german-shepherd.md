@@ -1,6 +1,7 @@
 ---
 title: 'Stylized Vector Illustration '
 thumbnail: '../images/german_shepherd-WM.png'
+type: 'vector'
 order: 0
 modelIframe: ''
 images: ['../images/german_shepherd-WM.png']

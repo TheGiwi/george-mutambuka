@@ -9,6 +9,7 @@ export class Item extends Component {
     frontmatter: shape({
       title: string.isRequired,
       images: arrayOf(object),
+      type: string.isRequired,
     }).isRequired,
     fields: shape({
       slug: string.isRequired,
@@ -25,10 +26,14 @@ export class Item extends Component {
   }
 
   render() {
-    const { title, thumbnail } = this.props.frontmatter
+    const { title, thumbnail, type } = this.props.frontmatter
     return (
       <Link className={this.baseClass} to={this.getItemUrl()}>
-        <Thumbnail thumbnail={thumbnail} parentClass={this.baseClass} />
+        <Thumbnail
+          thumbnail={thumbnail}
+          type={type}
+          parentClass={this.baseClass}
+        />
         <div>
           <h2 className={this.extend('title')}>{title}</h2>
         </div>

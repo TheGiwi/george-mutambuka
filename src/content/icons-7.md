@@ -3,6 +3,7 @@ title: 'Flat vector icons'
 thumbnail: '../images/Iconography_music-SQR.png'
 order: 0
 modelIframe: ''
+type: 'vector'
 images:
   [
     '../images/Iconography_music.png',

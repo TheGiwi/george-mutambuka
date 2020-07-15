@@ -3,6 +3,7 @@ title: 'Video theme icon set'
 thumbnail: '../images/icons_video.png'
 order: 0
 modelIframe: ''
+type: 'vector'
 images: ['../images/icons_video.png', '../images/Iconography_video-04.png']
 ---
 

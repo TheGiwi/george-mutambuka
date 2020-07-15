@@ -18,8 +18,12 @@
         margin-top: 1.5rem;
 
         @include media-breakpoint-up(md) {
-          margin-top: 2rem;
+          margin-top: 0;
         }
+      }
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: 2rem;
       }
 
       @include media-breakpoint-up(lg) {
@@ -29,19 +33,24 @@
       &__title {
         font-size: 1rem;
         font-weight: normal;
+        font-family: $body-font-family;
 
         @include media-breakpoint-up(sm) {
-          font-size: 1.5rem;
-          font-weight: 600;
+          font-size: 1.25rem;
+          font-weight: 400;
         }
       }
 
       &__thumbnail {
-        @extend .rounded, .mb-3, .p-3, .d-flex, .flex-column;
-        flex-grow: 1;
+        @extend .rounded, .mb-3;
+        @extend .d-flex, .justify-content-center, .flex-column, .p-3;
+
+        &--vector {
+          flex-grow: 1;
+        }
 
         &__image {
-          @extend .shadow, .rounded, .img-fluid, .my-auto;
+          @extend .img-fluid, .rounded, .shadow, .w-100;
         }
       }
     }

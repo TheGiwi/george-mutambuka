@@ -3,6 +3,7 @@
 title: 'Line vector icons'
 thumbnail: '../images/dribble_shot_icons-01.png'
 order: 0
+type: 'vector'
 modelIframe: ''
 images: [
 '../images/dribble_shot_icons-01.png',
