@@ -17,6 +17,7 @@ export const query = graphql`
         frontmatter: { type: { eq: "3d" } }
         fileAbsolutePath: { regex: "/content/" }
       }
+      sort: { fields: frontmatter___order }
     ) {
       edges {
         node {
