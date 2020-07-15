@@ -11,7 +11,7 @@ export class Contact extends Component {
   render() {
     const email = 'george@thegiwi.com'
     return (
-      <Layout>
+      <Layout title="Contact">
         <div className={this.baseClass}>
           <div className={this.extend('header')}>
             <h1>Contact me</h1>

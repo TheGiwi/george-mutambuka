@@ -30,7 +30,7 @@ export class Portfolio extends Component {
   render() {
     const { title } = this.props
     return (
-      <Layout>
+      <Layout title={title}>
         <div className={this.baseClass}>
           <h1 className={this.extend('title')}>{title}</h1>
           <div className={this.listClass}>{this.renderItems()}</div>

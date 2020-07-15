@@ -11,7 +11,7 @@ export class Success extends Component {
 
   render() {
     return (
-      <Layout>
+      <Layout title="Success">
         <div className={this.baseClass}>
           <img
             src={successImg}

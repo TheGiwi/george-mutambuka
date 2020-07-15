@@ -18,6 +18,10 @@ const links = [
     children: `Contact`,
     to: `/contact`,
   },
+  {
+    children: 'Blog',
+    to: '/blog',
+  },
 ]
 
 export const icons = [

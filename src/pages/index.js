@@ -21,7 +21,7 @@ const Index = ({ location, data }) => {
   return (
     <>
       <MetaData location={location} />
-      <Layout isNavFixed={true}>
+      <Layout isNavFixed={true} title="Home">
         <div className={baseClass}>
           <Carousel ship={ship} kitchen={kitchen} krkSystems={krkSystems} />
         </div>

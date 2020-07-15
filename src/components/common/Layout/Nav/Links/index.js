@@ -7,14 +7,6 @@ import Link from './Link'
 import links from '../../../../../links'
 
 export class Links extends Component {
-  links = [
-    ...links,
-    {
-      children: 'Blog',
-      to: '/blog',
-    },
-  ]
-
   baseClass = extendParentClass.bind(this)('links')
 
   extend = extendBaseClass.bind(this)
@@ -23,7 +15,7 @@ export class Links extends Component {
     <Link {...linkData} key={index} parentClass={this.baseClass} />
   )
 
-  renderLinks = () => this.links.map(this.renderLink)
+  renderLinks = () => links.map(this.renderLink)
 
   render() {
     return <ul className={this.baseClass}>{this.renderLinks()}</ul>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import PropTypes from 'prop-types'
 import Image from 'gatsby-image'
 import { graphql } from 'gatsby'
@@ -41,7 +42,7 @@ class Post extends Component {
     return (
       <>
         <MetaData data={data} location={location} type="article" />
-        <Layout>
+        <Layout title={title}>
           <div className={this.baseClass}>
             <article className={this.content}>
               {thumbnail ? (

@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 
@@ -15,7 +15,13 @@ import logo from '../../../../static/images/logo.svg'
  * styles, and meta data for each page.
  *
  */
-const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
+const DefaultLayout = ({
+  data,
+  children,
+  bodyClass,
+  isHome,
+  title = 'Blog',
+}) => {
   const site = data.allGhostSettings.edges[0].node
 
   return (
@@ -23,6 +29,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
       <Helmet>
         <html lang={site.lang} />
         <body className={bodyClass} />
+        <title>{title}</title>
       </Helmet>
 
       <div className="viewport" id="blog-page">
@@ -108,6 +115,7 @@ DefaultLayout.propTypes = {
   children: PropTypes.node.isRequired,
   bodyClass: PropTypes.string,
   isHome: PropTypes.bool,
+  title: string,
   data: PropTypes.shape({
     file: PropTypes.object,
     allGhostSettings: PropTypes.object.isRequired,

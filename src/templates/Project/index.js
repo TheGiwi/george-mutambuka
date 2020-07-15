@@ -42,7 +42,7 @@ export class Project extends Component {
     const { frontmatter, html } = this.props.data.markdownRemark
     const { title, images, modelIframe } = frontmatter
     return (
-      <Layout>
+      <Layout title={title}>
         <div className={this.baseClass}>
           <Header parentClass={this.baseClass} title={title} html={html} />
           <div className={this.contentClass}>
