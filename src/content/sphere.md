@@ -18,4 +18,4 @@ The project is available for download on the links below:
 
 https://www.blendswap.com/blend/23199
 
-https://thegiwi.com/resources.html
+https://thegiwi.github.io/resources-hosting/
