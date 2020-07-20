@@ -11,6 +11,6 @@ images:
   ]
 ---
 
-Architectural visualization of a residential house I creted for a client
+Architectural visualization of a residential house I created for a client
 and commercial building I cretaed to test out
 my marketplace cafe seating assets.
