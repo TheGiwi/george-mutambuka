@@ -24,5 +24,5 @@ images:
 
 Created these various office furniture
 assets for 3D marketplaces.
-They can be downloaded for free or purchase on CG Trader:
+Some are available for free and others for purchase on CG Trader:
 https://www.cgtrader.com/thegiwi
