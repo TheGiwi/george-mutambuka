@@ -1,5 +1,5 @@
 ---
-title: 'Low poly vector art'
+title: 'Low Poly Vector Art'
 thumbnail: '../images/khanyi IG upload.jpg'
 type: 'vector'
 order: 0
