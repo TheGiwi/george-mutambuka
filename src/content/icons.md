@@ -1,6 +1,6 @@
 ---
 
-title: 'Line vector icons'
+title: 'Line Vector Icons'
 thumbnail: '../images/dribble_shot_icons-01.png'
 order: 0
 type: 'vector'
