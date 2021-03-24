@@ -1,5 +1,5 @@
 ---
-title: 'Flat vector icons'
+title: 'Flat Vector Icons'
 thumbnail: '../images/Iconography_music-SQR.png'
 order: 0
 modelIframe: ''
