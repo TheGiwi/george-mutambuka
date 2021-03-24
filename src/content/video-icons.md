@@ -1,5 +1,5 @@
 ---
-title: 'Video theme icon set'
+title: 'Video Theme Icon Set'
 thumbnail: '../images/icons_video.png'
 order: 0
 modelIframe: ''
