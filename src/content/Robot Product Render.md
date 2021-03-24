@@ -18,6 +18,6 @@ This robot is inspired by Alberto Buzzi's drone https://artstation.com/artwork/P
 
 The model consists of spheres with boolean modifiers and
 kitbashing (from Creative Shrimp and some made by myself).
-I to achieve CAD like bevels and cuts, used the bevel modifier
+In order to achieve CAD like bevels and cuts, I used the bevel modifier
 and Blender's then new weighted normal
 and weld modifiers
