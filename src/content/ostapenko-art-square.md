@@ -1,5 +1,5 @@
 ---
-title: Vector Illustration triangulated
+title: Vector Illustration Triangulated
 thumbnail: '../images/Ostapenko_art_square-04.png'
 order: 0
 modelIframe: ''
