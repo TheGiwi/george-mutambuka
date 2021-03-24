@@ -11,8 +11,8 @@ images:
   ]
 ---
 
-Created this procedural material using Substance Designer and
-then I recreated it from scratch in Blender nodes as a challenge
+I created this procedural material using Substance Designer and
+then recreated it from scratch in Blender (using procedural texture nodes) as a challenge
 to see if I can create the same material using different software.
 The project is available for download on the links below:
 
