@@ -11,6 +11,6 @@ images:
   ]
 ---
 
-Proable hard drive product renders I created
+Portable hard drive product renders I created
 for the Fantom Drives website
 https://www.fantomdrives.com/
