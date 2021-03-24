@@ -13,4 +13,4 @@ images:
 ---
 
 Isometric vector art I created
-for a blockchain application
+for a blockchain application.
