@@ -7,5 +7,5 @@ modelIframe: ''
 images: ['../images/german_shepherd-WM.png']
 ---
 
-Monochrome vector drawing I created for a client of mine.
-The final use was for it to be laser etched onto a PC case.
+Monochrome vector drawing I created for a client.
+The final use was for laser etching onto a PC case.
