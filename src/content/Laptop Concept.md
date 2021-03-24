@@ -12,6 +12,6 @@ images:
   ]
 ---
 
-Created and rendered this
+I created and rendered this
 concept laptop
 as a personal project.
