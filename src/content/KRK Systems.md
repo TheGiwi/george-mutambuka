@@ -16,7 +16,7 @@ images:
   ]
 ---
 
-This is a personal project I didn't have any blueprints but used reference images from the product website http://www.krksys.com/Classic
+This is a personal project, I didn't have any blueprints of the speakers but used reference images from the product website http://www.krksys.com/Classic
 This project is available for download on Blendswap https://www.blendswap.com/blend/24177 and
 CG Trader https://www.cgtrader.com/free-3d-models/electronics/audio/krk-classic-5-studio-monitor-speakers
 
