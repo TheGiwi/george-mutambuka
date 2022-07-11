@@ -1,6 +1,6 @@
 ---
 title: Concept Cyborg Character
-type: '3d'
+type: ''
 thumbnail: ../images/Cyborg_001-SQR.jpg
 order: 
 modelIframe: '<div class="sketchfab-embed-wrapper">
