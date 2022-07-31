@@ -1,6 +1,6 @@
 ---
 title: Architectural Visualization
-thumbnail: '../images/FnRender_3.jpg'
+thumbnail: '../images/FnRender_3_SQR.jpg'
 order: 1
 modelIframe: ''
 type: '3d'
