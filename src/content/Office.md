@@ -1,5 +1,5 @@
 ---
-title: Office Furniture Models For 3D Marketplaces
+title: Free and Purchasable Assets
 thumbnail: '../images/Rend_preview_00-SQR.png'
 order: 5
 modelIframe: '<div class="sketchfab-embed-wrapper">
@@ -19,10 +19,17 @@ images:
     '../images/Render_prev_Stools_.jpg',
     '../images/Render_Prev_005.JPG',
     '../images/Render_Prev_004.JPG',
+    '../images/Checkered_4Colors_textures-mini.jpg',
+    '../images/Checkered_4Colors_comparison_render.jpg',
   ]
 ---
 
-Created these various office furniture
-assets for 3D marketplaces.
-Some are available for free and others for purchase on CG Trader:
+Assets I created for marketplaces and free download.
+You can find these and more items on CG Trader:
 https://www.cgtrader.com/thegiwi
+
+Procedural material can be downloaded on these following links:
+Blend files:
+https://www.blendswap.com/blend/23199
+Substance files:
+https://thegiwi.github.io/resources-hosting/
