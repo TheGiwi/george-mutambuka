@@ -1,5 +1,5 @@
 ---
-title: 'Hard Surface 3D Design'
+title: Hard Surface Modeling
 thumbnail: '../images/Robot_Product_render-Walpaper-1-SQR.jpg'
 order: 3
 modelIframe: '<div class="sketchfab-embed-wrapper">
