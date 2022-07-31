@@ -1,5 +1,5 @@
 ---
-title: 'Fashion And Accessories Visualization'
+title: Fashion And Accessories Visualization
 thumbnail: '../images/FashionViz_00.jpg'
 order: 2
 modelIframe: ''
