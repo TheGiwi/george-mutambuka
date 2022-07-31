@@ -3,7 +3,7 @@ title: Fashion And Accessories Visualization
 thumbnail: '../images/FashionViz_00.jpg'
 order: 14
 modelIframe: ''
-youtube: 'https://youtube.com/shorts/kbvCcEgW97k?feature=share'
+youtube: 'https://www.youtube.com/embed/kbvCcEgW97k'
 type: '3d'
 images:
   [
