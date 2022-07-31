@@ -17,8 +17,6 @@ images:
     '../images/Rend_preview_00.png',
     '../images/Render_prev_001.png',
     '../images/Render_prev_Stools_.jpg',
-    '../images/Render_Prev_005.JPG',
-    '../images/Render_Prev_004.JPG',
     '../images/Checkered_4Colors_textures-mini.jpg',
     '../images/Checkered_4Colors_comparison_render.jpg',
   ]
