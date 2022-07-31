@@ -12,6 +12,5 @@ images: [
 ]
 ---
 
-Back back I created and rendered in Blender with
-materials done in Substance Painter.
-This was a personal project.
+Fashion and accessories renders I created using
+CLO 7 and Blender.
