@@ -1,7 +1,7 @@
 ---
 title: Hard Drive Product Renders
 thumbnail: '../images/Product_renders_HDD2-SQR.jpg'
-order: 8
+order: 6
 modelIframe: ''
 type: '3d'
 images:
