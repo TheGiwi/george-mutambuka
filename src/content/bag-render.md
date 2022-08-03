@@ -12,5 +12,5 @@ images:
   ]
 ---
 
-Fashion and accessories I created
-using CLO 7 and Blender. 
+The software I use to create apparel and accessories visualizations are
+CLO 7, Blender and DaVinci Resolve.
