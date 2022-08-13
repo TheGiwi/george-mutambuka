@@ -1,5 +1,5 @@
 ---
-title: KRK Speakers Short Animation
+title: KRK Speakers Product Animation
 thumbnail: '../images/Render_SPKR1-SQR.JPG'
 order: 6
 type: '3d'
