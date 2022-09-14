@@ -1,7 +1,7 @@
 ---
 title: Laptop Product Design and Render
 thumbnail: '../images/A-Renders_6-SQR.jpg'
-order: 7
+order: 8
 modelIframe: ''
 type: '3d'
 images:
