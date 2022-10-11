@@ -1,5 +1,5 @@
 ---
-title: Hard Drive Product Renders
+title: Product Renders for Fantom Drives
 thumbnail: '../images/Product_renders_HDD2-SQR.jpg'
 order: 6
 modelIframe: ''
