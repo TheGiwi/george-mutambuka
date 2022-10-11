@@ -1,5 +1,5 @@
 ---
-title: Baby Monitor Product Render
+title: Product Renders for Dockwell
 thumbnail: '../images/Product_render_panda-SQR.jpg'
 order: 0
 modelIframe: ''
