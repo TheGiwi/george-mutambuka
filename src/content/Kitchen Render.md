@@ -8,8 +8,8 @@ images:
   [
     
     '../images/new_Interior_01.jpg',
-    '../images/FnRender_6.jpg',
     '../images/FnRender_3.jpg',
+    '../images/FnRender_6.jpg',
     '../images/FnRender_9.jpg',
     '../images/FnRender_7.jpg',
     '../images/Exterior_01.jpg',
