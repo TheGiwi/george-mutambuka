@@ -12,5 +12,4 @@ images:
   ]
 ---
 
-The main software I use to create fashion, apparel, accessories and merchandise visualizations are,
-CLO 3D, Style3D Atelier, Blender, and DaVinci Resolve.
+I mainly utilize CLO 3D, Style3D Atelier, Blender, and DaVinci Resolve to create my fashion, accessories and merchandise visualizations.
