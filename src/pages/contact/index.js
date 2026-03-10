@@ -16,7 +16,7 @@ export class Contact extends Component {
           <div className={this.extend('header')}>
             <h1>Contact me</h1>
             <p>
-              CONTACT FORM NOT FUNCTIONAL - PLEASE E-MAIL ME AT {' '}
+              Contact Form Not Functional Please E-Mail to {' '}
               <a href={`mailto:${email}`}>{email} </a>
             </p>
           </div>
