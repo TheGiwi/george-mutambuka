@@ -1,5 +1,5 @@
 ---
-title: 'Stylized Vector Illustration '
+title: 'Stylized Vector Illustrations'
 thumbnail: '../images/german_shepherd-WM.png'
 type: 'vector'
 order: 0
