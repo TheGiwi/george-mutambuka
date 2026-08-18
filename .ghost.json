@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://cross-carlos-physics-villa.trycloudflare.com",
+    "apiUrl": "https://the-giwi-3d-generalist.netlify.app",
     "contentApiKey": "2f6208867ac6ebdea723b2f421"
   },
   "production": {
-    "apiUrl": "https://cross-carlos-physics-villa.trycloudflare.com",
+    "apiUrl": "https://the-giwi-3d-generalist.netlify.app",
     "contentApiKey": "2f6208867ac6ebdea723b2f421"
   }
 }
