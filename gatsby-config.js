@@ -29,7 +29,7 @@ try {
 
 if (
   process.env.NODE_ENV === `production` &&
-  config.siteUrl === `https://the-giwi-3d-generalist.netlify.app' &&
+  config.siteUrl === `https://cross-carlos-physics-villa.trycloudflare.com' &&
   !process.env.SITEURL
 ) {
   throw new Error(
