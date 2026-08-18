@@ -10,15 +10,21 @@ try {
 } catch (e) {
   ghostConfig = {
     production: {
-      apiUrl: process.env.GHOST_API_URL,
-      contentApiKey: process.env.GHOST_CONTENT_API_KEY,
+      apiUrl: process.env.GHOST_API_URL || process.env.GATSBY_API_URL,
+      contentApiKey: process.env.GHOST_CONTENT_API_KEY || process.env.GATSBY_CONTENT_API_KEY,
+    },
+    development: {
+      apiUrl: process.env.GHOST_API_URL || process.env.GATSBY_API_URL,
+      contentApiKey: process.env.GHOST_CONTENT_API_KEY || process.env.GATSBY_CONTENT_API_KEY,
     },
   }
 } finally {
-  const { apiUrl, contentApiKey } =
+  const activeConfig =
     process.env.NODE_ENV === `development`
       ? ghostConfig.development
       : ghostConfig.production
+
+  const { apiUrl, contentApiKey } = activeConfig || {}
 
   if (!apiUrl || !contentApiKey || contentApiKey.match(/<key>/)) {
     throw new Error(
@@ -73,10 +79,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-ghost`,
-      options:
-        process.env.NODE_ENV === `development`
+      options: {
+        ...(process.env.NODE_ENV === `development`
           ? ghostConfig.development
-          : ghostConfig.production,
+          : ghostConfig.production),
+        // Custom headers passed down to underlying HTTP requests
+        headers: {
+          'ngrok-skip-browser-warning': 'true',
+        },
+      },
     },
     /**
      *  Utility Plugins
