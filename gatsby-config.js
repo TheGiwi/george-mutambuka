@@ -29,7 +29,7 @@ try {
 
 if (
   process.env.NODE_ENV === `production` &&
-  config.siteUrl === `http://localhost:2368' &&
+  config.siteUrl === `https://the-giwi-3d-generalist.netlify.app' &&
   !process.env.SITEURL
 ) {
   throw new Error(
