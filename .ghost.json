@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "http://localhost:2368",
+    "apiUrl": "https://cross-carlos-physics-villa.trycloudflare.com",
     "contentApiKey": "2f6208867ac6ebdea723b2f421"
   },
   "production": {
-    "apiUrl": "http://localhost:2368",
+    "apiUrl": "https://cross-carlos-physics-villa.trycloudflare.com",
     "contentApiKey": "2f6208867ac6ebdea723b2f421"
   }
 }
