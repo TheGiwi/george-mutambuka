@@ -33,7 +33,7 @@ if (
   !process.env.SITEURL
 ) {
   throw new Error(
-    `siteUrl can't be localhost and needs to be configured in siteConfig. Check the README.`
+    'siteUrl can't be localhost and needs to be configured in siteConfig. Check the README.'
   ) // eslint-disable-line
 }
 
